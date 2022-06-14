@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun calculate(view: View) {
-        var premier_nombre = if (nombre_1.text.toString().isEmpty()) 0 else nombre_1.text.toString().toInt()
-        var second_nombre = if (nombre_2.text.toString().isEmpty()) 0 else nombre_2.text.toString().toInt()
+        var premier_nombre: Int = if (nombre_1.text.toString().isEmpty()) 0 else nombre_1.text.toString().toInt()
+        var second_nombre: Int = if (nombre_2.text.toString().isEmpty()) 0 else nombre_2.text.toString().toInt()
         if (premier_nombre == 0 || second_nombre == 0) {
             resultat.text = "Erreur, un des nombres est 0 ou vide"
             return
